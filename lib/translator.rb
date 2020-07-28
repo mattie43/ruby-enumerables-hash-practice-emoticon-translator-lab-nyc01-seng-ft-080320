@@ -16,7 +16,7 @@ end
 
 def get_japanese_emoticon(a, b)
   # code goes here
-  em = load_library(emotes)
+  em = load_library(a)
   em.each do |k,v|
     return v[1] if k == emoticon
   end
