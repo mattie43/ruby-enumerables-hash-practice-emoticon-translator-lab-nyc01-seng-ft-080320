@@ -7,6 +7,8 @@ def load_library(emotes)
   em = YAML.load_file('lib/emoticons.yml')
   final = {}
   em.each do |k,v|
+    puts k
+    puts v
     puts final
   end
   final
