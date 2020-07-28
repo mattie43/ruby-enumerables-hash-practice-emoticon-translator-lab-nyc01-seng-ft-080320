@@ -9,6 +9,7 @@ def load_library(emotes)
   em.each do |k,v|
     final[k] = Hash.new
     final[k][:english] = v[0]
+    final[k][:japanese] = v[1]
     puts final
   end
   final
