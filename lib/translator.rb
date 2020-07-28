@@ -19,6 +19,8 @@ def get_japanese_emoticon(emotes, emoticon)
   em = load_library(emotes)
   em.each do |k,v|
     puts "k: #{k}"
+    puts "v: #{v}"
+  end
 end
 
 def get_english_meaning(emotes, emoticon)
