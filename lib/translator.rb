@@ -2,7 +2,7 @@
 require 'pry'
 require 'yaml'
 
-def load_library(emotes)
+def load_library(path)
   # code goes here
   em = YAML.load_file('lib/emoticons.yml')
   final = {}
@@ -14,7 +14,7 @@ def load_library(emotes)
   final
 end
 
-def get_japanese_emoticon(a, b)
+def get_japanese_emoticon(path, b)
   # code goes here
   em = load_library(a)
   em.each do |k,v|
@@ -23,7 +23,7 @@ def get_japanese_emoticon(a, b)
   "No emoticon found"
 end
 
-def get_english_meaning(emotes, emoticon)
+def get_english_meaning(path, emoticon)
   # code goes here
   em = load_library(emotes)
 end
