@@ -20,7 +20,7 @@ def get_japanese_emoticon(emotes, emoticon)
   em.each do |k,v|
     return v[:japanese] if v[:english] == emoticon
   end
-  "No emoticon found"
+  "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(emotes, emoticon)
