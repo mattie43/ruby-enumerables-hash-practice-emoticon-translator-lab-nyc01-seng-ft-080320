@@ -11,6 +11,7 @@ def load_library(emotes)
     final[k][:english] = v[0]
     final[k][:japanese] = v[1]
   end
+  binding.pry
   final
 end
 
