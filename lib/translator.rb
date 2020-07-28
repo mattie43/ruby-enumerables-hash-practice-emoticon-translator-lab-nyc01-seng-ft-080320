@@ -11,7 +11,6 @@ def load_library(emotes)
     final[k][:english] = v[0]
     final[k][:japanese] = v[1]
   end
-  binding.pry
   final
 end
 
@@ -19,6 +18,7 @@ def get_japanese_emoticon(emotes, b)
   # code goes here
   em = load_library(emotes)
   em.each do |k,v|
+    puts k
   end
   "No emoticon found"
 end
