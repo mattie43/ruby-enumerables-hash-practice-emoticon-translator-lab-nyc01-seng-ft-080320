@@ -7,7 +7,7 @@ def load_library(emotes)
   em = YAML.load_file('lib/emoticons.yml')
   final = {}
   em.each do |k,v|
-    final => [k]
+    final[k] = Hash.new
     puts final
   end
   final
