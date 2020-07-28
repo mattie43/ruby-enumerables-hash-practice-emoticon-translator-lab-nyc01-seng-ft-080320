@@ -14,7 +14,7 @@ def load_library(emotes)
   final
 end
 
-def get_japanese_emoticon(emotes, b)
+def get_japanese_emoticon(emotes, emoticon)
   # code goes here
   em = load_library(emotes)
   em.each do |k,v|
